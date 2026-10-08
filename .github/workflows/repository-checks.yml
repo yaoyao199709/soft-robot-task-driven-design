@@ -31,3 +31,10 @@ jobs:
           WANDB_MODE: disabled
           MPLBACKEND: Agg
         run: python tests/check_runtime.py
+      - name: Run read-only research smoke tests
+        shell: bash -el {0}
+        env:
+          WANDB_MODE: disabled
+          MPLBACKEND: Agg
+          TF_CPP_MIN_LOG_LEVEL: '2'
+        run: python tests/check_research_smoke.py
