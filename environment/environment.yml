@@ -1,0 +1,21 @@
+name: soft_robotics_sim
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy=1.26.*
+  - scipy
+  - pandas
+  - matplotlib
+  - pybullet=3.21
+  - scikit-learn
+  - joblib
+  - cma=4.0.0
+  - pip
+  - pip:
+      - tensorflow==2.18.0
+      - stable-baselines3==2.2.1
+      - gym==0.26.2
+      - gymnasium==0.29.1
+      - shimmy>=0.2,<2
+      - wandb==0.15.2

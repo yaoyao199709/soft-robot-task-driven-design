@@ -1,0 +1,22 @@
+<robot name="egg">
+  <link name="egg_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="objects/egg_5_w.stl" scale="0.01 0.01 0.01" />
+      </geometry>
+      <material name="yellow">
+        <color rgba="1.0 1.0 0.0 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="objects/egg_5_w.stl" scale="0.01 0.01 0.01" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.15000000000000002" />
+      <inertia ixx="0.00295082" ixy="0.0" ixz="0.0" iyy="0.0038017730000000005" iyz="0.0" izz="0.0038371980000000004" />
+    </inertial>
+  </link>
+</robot>
