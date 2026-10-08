@@ -34,6 +34,12 @@ The Python environment specification and MATLAB requirements are under [`environ
 
 Training scripts and some simulation utilities write files to disk. Run write-producing workflows in a disposable working copy if you need to preserve packaged models, URDF files, and results. Check input paths and required model assets before running each workflow.
 
+## Validation scope
+
+Automated GitHub Actions checks validate Python source syntax and repository resources, installation of the documented Linux/CPU environment, import of key dependencies, TFLite model loading and sample inference, packaged scalers, Gripper PPO checkpoint loading and deterministic policy prediction, and headless PyBullet mesh loading and physics stepping.
+
+These lightweight checks do not constitute full reproduction of the paper's numerical results or end-to-end execution of all Gripper, Helical, and Tendon-driven training, validation, and optimization workflows. MATLAB scripts were not executed in GitHub Actions. See [the automated checks](.github/workflows/repository-checks.yml) and [smoke tests](tests/check_research_smoke.py).
+
 ## Citation
 
 Use the [journal DOI](https://doi.org/10.1002/aisy.70406) when citing this work.
