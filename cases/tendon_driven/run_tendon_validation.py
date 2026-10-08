@@ -50,9 +50,9 @@ tflite_model_path = str(THIS_DIR / "tendon_driven_surrogate_model.tflite")
 x_scaler_path = str(THIS_DIR / "x_scaler.joblib")
 y_scaler_path = str(THIS_DIR / "y_scaler.joblib")
 
-top_mesh_path    = str(THIS_DIR / "link" / "link1.stl")
-module_mesh_path = str(THIS_DIR / "link" / "link23.stl")
-end_mesh_path    = str(THIS_DIR / "link" / "link4.stl")
+top_mesh_path    = str(THIS_DIR / "link" / "link1.STL")
+module_mesh_path = str(THIS_DIR / "link" / "link23.STL")
+end_mesh_path    = str(THIS_DIR / "link" / "link4.STL")
 
 interpreter = tflite.Interpreter(model_path=tflite_model_path)
 interpreter.allocate_tensors()
