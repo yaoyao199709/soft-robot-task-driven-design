@@ -22,7 +22,7 @@ The upstream MATLAB datasets and reconstruction code are organized under [`../..
 
 ## Running the workflows
 
-Run scripts from their own directory or via a full path. Dependencies include `numpy`, `pandas`, `matplotlib`, `scikit-learn`, `tensorflow`, `joblib`, `pybullet`, and `cma` as appropriate to each step; see the repository's `environment/` directory.
+The relative commands below are intended to be run from `cases/helical/`. From the repository root, prefix each script path with `cases/helical/`. Dependencies include `numpy`, `pandas`, `matplotlib`, `scikit-learn`, `tensorflow`, `joblib`, `pybullet`, and `cma` as appropriate to each step; see the repository's `environment/` directory.
 
 1. **Validation:** `python Sim2Real/run_helical_validation.py`. Adjust the prescribed load in `external_load_fns`. The gravity-only mode and tip-load modes use different step counts and a code-section toggle; inspect the script's marked configuration before launching.
 2. **Meta-model training:** `python Shape-matching_opt/optimization/train_shape_meta_models.py` (one axis/configuration per run, as defined near the top of the file).
