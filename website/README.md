@@ -1,13 +1,17 @@
 # Project website
 
-This is the project page for *Generalized Task-Driven Design of Soft Robots*.
+The live project page for *Generalized Task-Driven Design of Soft Robots* is available here:
 
-## Preview
+**[Visit the project website](https://yaoyao199709.github.io/soft-robot-task-driven-design/)**
 
-Open `index.html` in a browser after downloading the complete website directory. Images and video files are loaded from `assets/` using relative URLs.
+The site presents the research workflow, demonstrations of the three soft actuator configurations, design applications, and links to the journal article, arXiv manuscript, and research code.
 
-## Publish with GitHub Pages
+## Website source
 
-GitHub Pages does not support selecting an arbitrary `website/` directory as the publishing folder in branch settings. When ready to publish, configure a GitHub Actions Pages deployment that uploads `website/` as the Pages artifact (or deploy the directory to another static hosting service). Keep `assets/` next to `index.html` and `styles.css`. The repository can remain private while the publication decision is pending; do not enable Pages until the intended site visibility has been confirmed.
+This directory contains the website source code: `index.html`, `styles.css`, and media in `assets/`.
 
-The page includes the research workflow, demonstrations of the three actuator families, design applications, and links to the journal article and arXiv manuscript.
+To preview the site locally, download the complete `website/` directory and open `index.html` in a browser.
+
+## Deployment
+
+The live website is deployed to GitHub Pages via [the GitHub Actions workflow](../.github/workflows/publish-website.yml), which uploads `website/` as the site artifact.
