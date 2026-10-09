@@ -2,7 +2,7 @@
 
 Research code, precomputed FEM data, pretrained models, and project website for the paper published in *Advanced Intelligent Systems*.
 
-[Project website](website/) · [Journal article](https://doi.org/10.1002/aisy.70406) · [arXiv](https://arxiv.org/abs/2603.19794)
+[Project website](https://yaoyao199709.github.io/soft-robot-task-driven-design/) · [Journal article](https://doi.org/10.1002/aisy.70406) · [arXiv](https://arxiv.org/abs/2603.19794)
 
 ## Overview
 
@@ -20,7 +20,7 @@ The framework uses FEM-derived actuator response data to construct efficient sur
 | [`cases/helical/`](cases/helical/) | Helical-actuator validation and shape-matching optimization |
 | [`cases/tendon_driven/`](cases/tendon_driven/) | Tendon-driven actuator simulation |
 | [`environment/`](environment/) | Python and MATLAB software requirements |
-| [`website/`](website/) | Research project website |
+| [`website/`](website/) | Source files for the [live project website](https://yaoyao199709.github.io/soft-robot-task-driven-design/) |
 
 ## Workflow documentation
 
